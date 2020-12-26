@@ -20,7 +20,7 @@ with open('../data/in_model/sample_word2id.pkl', 'rb') as f:
 input_len = 50
 output_len = 100
 embedding_dim = 200
-hidden_dim = 128
+hidden_dim = 192
 BATCH_NUM=1
 vocab_size = len(word2id)
 device = 'cpu'
@@ -31,8 +31,8 @@ encoder = Encoder(vocab_size, embedding_dim, hidden_dim).to(device)
 attn_decoder = AttentionDecoder(vocab_size, embedding_dim, hidden_dim, BATCH_NUM).to(device)
 
 #学習済みモデルの読み込み
-en_model_path = '../learned_models/sample_en_model_e10'
-de_model_path = '../learned_models/sample_de_model_e10'
+en_model_path = '../learned_models/sample_en_model_e30'
+de_model_path = '../learned_models/sample_de_model_e30'
 
 encoder.load_state_dict(torch.load(en_model_path))
 attn_decoder.load_state_dict(torch.load(de_model_path))
