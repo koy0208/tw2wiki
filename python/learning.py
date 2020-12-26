@@ -36,7 +36,6 @@ attn_decoder_optimizer = optim.Adam(attn_decoder.parameters(), lr=0.001)
 all_losses = []
 
 def main():
-    #%%
     for epoch in range(1, EPOCH_NUM+1):
         epoch_loss = 0
 
