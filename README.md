@@ -25,3 +25,8 @@ $ python learning.py
 # テストデータの初め10この予測結果が出力される。
 $ python predict.py
 ```
+## Reference
+[Seq2Seqを利用した文章生成](https://qiita.com/gacky01/items/064c0071e5cff87e5c08)
+
+[PyTorchでAttention Seq2Seqを実装してみた](https://qiita.com/m__k/items/646044788c5f94eadc8d)
+
