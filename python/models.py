@@ -38,9 +38,7 @@ class AttentionDecoder(nn.Module):
         output, state = self.gru(embedding, h)
 
        # Attention層
-       # hs.size() = ([100, 29, 128])
-       # output.size() = ([100, 10, 128])
-
+       
        # bmmを使ってEncoder側の出力(hs)とDecoder側の出力(output)をbatchごとまとめて行列計算するために、Decoder側のoutputをbatchを固定して転置行列を取る
         t_output = torch.transpose(output, 1, 2) # t_output.size() = ([100, 128, 10])
 
