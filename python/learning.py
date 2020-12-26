@@ -21,7 +21,7 @@ output_data = np.load('../data/in_model/sample_output_data.npy', allow_pickle=Tr
 embedding_dim = 200
 hidden_dim = 192
 BATCH_NUM=10
-EPOCH_NUM = 20
+EPOCH_NUM = 30
 vocab_size = len(id2word)
 device = 'cpu'
 
