@@ -1,5 +1,5 @@
 # tw2wiki
-
+[Wikipediaは書く時代から生み出す時代へ ~ Twitterからの自動生成](https://qiita.com/nakata_naka/items/664348cdd50415f47744)
 ## Usage
 
 ```bash
